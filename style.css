@@ -88,8 +88,28 @@ h1 {
 }
 
 .hero-image img {
+    border-radius: 2%;
     width: 500px;
     height: 350px;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 40px;
+    }
+    
+    .hero-cta {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .hero-image img {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
 }
 
 /* Content Part */
